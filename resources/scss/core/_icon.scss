@@ -1,0 +1,76 @@
+// Icon
+.icon {
+    svg {
+        @apply w-full h-full 
+        timing-3 property-all duration-3;
+    }
+
+    &.-md {
+        @apply w-12 h-12 block;
+    }
+    &.-sm {
+        @apply w-10 h-10 block;
+    }
+    &.-sm-2 {
+        @apply w-8 h-8 block;
+    }
+    &.-sm-3 {
+        @apply w-6 h-6 block;
+    }
+    &.-xs {
+        @apply w-4 h-4 block;
+    }
+
+    // Transforms
+    &.-flip {
+        transform: rotate(180deg);
+    }
+}
+
+// Logo Icon
+.logo,
+.logo-icon {
+    @apply w-full flex items-center;
+}
+
+@screen md {
+    // Logo
+    .logo {
+        @apply max-w-xxs;
+    }
+}
+
+// Utility Classes
+.path-1 {stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+// Yellow
+.stroke-yellow {fill:none;stroke:#F1D02F;}
+.fill-stroke-yellow {fill:#F1D030;stroke:#F1D02F;}
+
+// Green
+.stroke-green {fill:none;stroke:#4FB990;}
+.fill-stroke-green {fill:#4FB990;stroke:#4FB990;}
+
+
+// Blue
+.stroke-blue {fill:none;stroke:#3EC6FC;}
+.fill-stroke-blue {fill:#3EC6FC;stroke:#3EC6FC;}
+
+// Red 
+.stroke-red {fill:none;stroke:#ED414C;}
+.stroke-fill-red {fill:#ED414C;stroke:#ED414C;}
+
+// Dark
+.stroke-dark {fill:none;stroke:#324349;}
+.sroke-fill-dark {fill:#32444A;stroke:#324349;}
+
+// Purple
+.stroke-purple {fill:none;stroke:#803C4B;}
+.stroke-fill-purple {fill:#803C4B;stroke:#803C4B;}
+
+// .stroke {
+//     fill:none;stroke-width:2;stroke-miterlimit:10;
+// }
+// .-stroke-3 .stroke {stroke-width: 3;}
+// .-stroke-4 .stroke {stroke-width: 4;}
+

@@ -1,0 +1,39 @@
+{
+  "name": "leigh-baking",
+  "version": "1.0.0",
+  "description": "Static site single-pager built with Tailwind, Vue, and Laravel Mix",
+  "main": "index.html",
+  "author": "Telegraph Creative",
+  "license": "unlicensed",
+  "repository": "git@github.com:TelegraphCreative/leigh-baking-co.git",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "bunnyjs": "^0.14.41",
+    "in-view": "^0.6.1",
+    "laravel-mix": "^4.0.15",
+    "laravel-mix-tailwind": "^0.1.0",
+    "lazysizes": "^4.1.7",
+    "rellax": "^1.9.1",
+    "tiny-slider": "^2.9.2",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "stylelint resources/scss/**.scss --fix",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.17.4",
+    "sass-loader": "7.*",
+    "tailwindcss": "^0.7.4"
+  }
+}

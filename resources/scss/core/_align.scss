@@ -1,0 +1,17 @@
+.align-y {
+    top:50%;
+    transform: translate(0%, -50%);
+}
+.align-xy {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+// .align-text-icon {
+//     @apply flex .items-center;
+    
+//     .icon {
+//         @apply inline-block;
+//     }
+// }

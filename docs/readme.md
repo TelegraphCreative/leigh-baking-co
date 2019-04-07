@@ -1,0 +1,19 @@
+# Leigh Baking Co
+
+## Fonts
+
+### Families, Weights
+- Libre Baskerville
+    - 700 (bold)
+    - 400 (reg)
+- Open Sans 
+    - 400 (reg)
+    - 400 (reg)
+
+### Sizes
+- 56
+- 48
+- 18
+- 16
+- 14
+- 12

@@ -1,0 +1,10 @@
+// Labels
+// Standard Label
+.label {
+    
+    // Meta
+    &-meta {
+        @apply uppercase font-sans
+        text-sm;
+    }
+}

@@ -1,0 +1,38 @@
+.signup-form {
+    @apply relative 
+    w-full max-w-xs;
+
+    .email-input {
+        @apply border-2 border-white rounded
+        bg-transparent text-orange
+        property-all duration-1 timing-1
+        text-base font-sans
+        py-3 px-4
+        w-full;
+
+        &::placeholder {
+            @apply opacity-100;
+        }
+
+        &:focus,
+        &:target {
+            @apply border-orange;
+            outline: none;
+
+            &::placeholder {
+                @apply opacity-0;
+            }
+        }
+    }
+
+    .submit {
+        @apply absolute pin-r align-y
+        h-full
+        px-4 
+        text-orange;
+
+        // &:hover {
+        //     @apply text-orange;
+        // }
+    }
+}

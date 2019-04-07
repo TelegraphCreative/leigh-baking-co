@@ -1,0 +1,85 @@
+// Prevent Outlines
+* {
+  outline: none;
+}
+
+// Base
+.btn {
+  @apply link
+    inline-block
+    border-2 border-black
+    text-black text-sm text-center
+    font-sans 
+    font-medium
+    py-4 px-10;
+
+  // Hover
+  &:hover {
+    @apply border-black bg-black text-grey-lightest;
+  }
+
+  &[disabled] {
+    @apply opacity-50 pointer-events-none;
+  }
+
+  // // Light
+  // &.-light {
+  //   @apply border-green-light text-green-light;
+
+  //   &:hover {
+  //     @apply border-white bg-white text-green-darkest;
+  //   }
+  // }
+
+  // // Solid
+  // &.-solid {
+  //   @apply bg-green border-green text-white;
+
+  //   &:hover {
+  //     @apply bg-green-darkest border-green-darkest text-white;
+  //   }
+  // }
+
+  // Small
+  &.-small {
+    @apply py-3;
+  }
+
+  
+
+  // // Dark
+  // &.-dark {
+  //   @apply border-green-darkest text-green-darkest;
+
+  //   &.-small {
+  //     @apply border;
+  //   }
+
+  //   &:hover {
+  //     @apply border-green-darkest bg-green-darkest text-white;
+  //   }
+  // }
+
+  // Screen 
+  @screen md {
+    
+    // Base
+    @apply py-4 px-6;
+
+  }
+
+}
+
+// -Modifiers
+.btn,
+[class^="btn--"] {
+  &.-wide {
+    @apply px-12;
+  }
+
+  &.-full {
+    @apply block 
+            w-full
+            text-center;
+  }
+}

@@ -1,0 +1,80 @@
+// Section Spacing
+.space {
+
+  // Top Spacing
+  &-t {
+    // Default
+    @apply pt-14;
+    
+    &--sm {
+      @apply pt-20;
+    }
+    
+    // Menu
+    &--menu {
+      @apply pt-20;
+    }
+  }
+  
+  // Bottom Spacing
+  &-b {
+    
+    // Default
+    @apply pb-14;
+
+    &--sm {
+      @apply pb-20;
+    }
+    
+    &--md {
+      @apply pb-24;
+    }
+    
+    &--lg {
+      @apply pb-28;
+    }
+
+    &--xl {
+      @apply pb-32;
+    }
+
+  }
+
+  @screen mainMenu {
+    // Top Spacing
+    &-t {
+      // Menu
+      &--menu {
+        @apply pt-38;
+      }
+    }
+  }
+
+  @screen md {   
+    
+    // Bottom Spacing
+    &-b {
+      
+      &--md {
+        @apply pb-28;
+      }
+      
+      &--lg {
+        @apply pb-36;
+      }
+  
+      &--xl {
+        @apply pb-44;
+      }
+
+    }
+  }
+}
+
+
+// Info: Spacing Scale (8 base)
+
+// 60px = 3.75rem -> 14 -> default
+// 120px = 7.5rem -> 28 -> md
+// 144px = 9rem -> 36 -> lg
+// 192px = 12rem -> 44 -> xl

@@ -1,0 +1,30 @@
+// Default
+body {
+    @apply timing-2 duration-3 property-colors;
+}
+
+// .site-header {
+//     background: linear-gradient(180deg, white 20%, rgba(255, 255, 255, 0) 100%);
+// }
+
+// Themes
+.theme {
+    &--black body {
+        @apply bg-black delay-2;
+
+        .site-header {
+            .link,
+            .logo-icon {
+                @apply text-grey-lightest;
+            }
+            .btn {
+                @apply border-grey-lightest;
+            }    
+        }
+
+        // .site-header {
+        //     background: linear-gradient(180deg, var(--black) 20%, rgba(255, 255, 255, 0) 100%);
+        // }
+        
+    }
+}

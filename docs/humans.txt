@@ -1,0 +1,10 @@
+/* TEAM */
+
+Creator: Telegraph
+URL: https://http://telegraphcreative.co
+Description: Telegraph is a top-notch web design and development team
+
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: JavaScript

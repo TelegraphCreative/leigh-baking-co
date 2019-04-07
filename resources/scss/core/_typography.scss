@@ -1,0 +1,105 @@
+// Typography
+body {
+  @apply bg-grey-lightest text-grey-darker font-sans;
+}
+
+// Headers
+.header {
+
+  // 24/2xl 32/3xl
+  &-md {
+    @apply text-2xl font-serif;
+  }
+
+  // 32/3xl 36/4xl 48/5xl
+  &-lg {
+    @apply text-3xl;
+  }
+
+  // 32/3xl 48/5xl 56/6xl
+  &-xl {
+    @apply text-3xl font-serif;
+  }
+  
+}
+
+// Paragraphs
+.paragraphs {
+  p {
+    @apply text-base leading-normal font-normal
+      mb-4;
+
+    &:last-of-type {
+      @apply mb-0;
+    }
+
+    // Default Links
+    a {
+      @apply text-orange;
+
+      &:hover {
+        @apply text-grey-darker;
+      }
+    }
+  }
+
+  &.-sm {
+    p {
+      @apply text-sm;
+    }
+  }
+
+  &.-lg {
+    p {
+      @apply text-lg
+            mb-6;
+
+      &:last-of-type {
+        @apply mb-0;
+      }
+    }
+  }
+  
+}
+
+
+// md Screen
+@screen md {
+  // Headers
+  .header {
+    // 24/2xl 32/3xl
+    &-md {
+      @apply text-3xl font-serif;
+    }
+    // 32/3xl 36/4xl 48/5xl
+    &-lg {
+      @apply text-4xl;
+    }
+    // 32/3xl 48/5xl 56/6xl
+    &-xl {
+      @apply text-5xl;
+    }
+  }
+}
+// lg Screen
+@screen lg {
+  // Headers
+  .header {
+    // 32/3xl 48/5xl 56/6xl
+    &-xl {
+      @apply text-6xl;
+    }
+  }
+}
+
+
+// Info: Type Scale
+// Headers
+// 32 = 2rem -> 3xl -> header-md ==> 24/2xl 32/3xl
+// 48 = 3rem -> 5xl -> header-lg ==> 32/3xl 36/4xl 48/5xl
+// 56 = 3.5rem -> 6xl -> header-xl ==> 32/3xl 48/5xl 56/6xl
+
+// Paragraphs
+// 16px = 1rem -> reg
+// 18px = 1.125rem -> lg
+// 20px = 1.25rem -> xl

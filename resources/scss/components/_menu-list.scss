@@ -1,0 +1,21 @@
+// Menu List
+.menu-list {
+    @apply list-reset mb-4;
+
+    
+    &__item {
+        @apply text-sm
+        mb-3;
+    }
+
+    a {
+        @apply link
+        block
+        font-normal;
+
+        &:hover {
+            // @apply text-green;
+        }
+    }
+    
+}
