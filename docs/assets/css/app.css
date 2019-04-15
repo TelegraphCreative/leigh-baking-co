@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans);@charset "UTF-8";
-
-[v-cloak] {
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Work+Sans:400,600);[v-cloak] {
   display: none;
 }
 
@@ -607,6 +605,10 @@ table {
   background-color: #6f7b6a;
 }
 
+.bg-green-lightest {
+  background-color: #c0ccbc;
+}
+
 .bg-pink {
   background-color: #f66d9b;
 }
@@ -643,6 +645,10 @@ table {
   background-color: #6f7b6a;
 }
 
+.hover\:bg-green-lightest:hover {
+  background-color: #c0ccbc;
+}
+
 .hover\:bg-pink:hover {
   background-color: #f66d9b;
 }
@@ -677,6 +683,10 @@ table {
 
 .focus\:bg-green:focus {
   background-color: #6f7b6a;
+}
+
+.focus\:bg-green-lightest:focus {
+  background-color: #c0ccbc;
 }
 
 .focus\:bg-pink:focus {
@@ -787,6 +797,10 @@ table {
   border-color: #6f7b6a;
 }
 
+.border-green-lightest {
+  border-color: #c0ccbc;
+}
+
 .border-pink {
   border-color: #f66d9b;
 }
@@ -823,6 +837,10 @@ table {
   border-color: #6f7b6a;
 }
 
+.hover\:border-green-lightest:hover {
+  border-color: #c0ccbc;
+}
+
 .hover\:border-pink:hover {
   border-color: #f66d9b;
 }
@@ -857,6 +875,10 @@ table {
 
 .focus\:border-green:focus {
   border-color: #6f7b6a;
+}
+
+.focus\:border-green-lightest:focus {
+  border-color: #c0ccbc;
 }
 
 .focus\:border-pink:focus {
@@ -2222,11 +2244,11 @@ table {
 }
 
 .max-w-sm {
-  max-width: 30rem;
+  max-width: 33rem;
 }
 
 .max-w-md {
-  max-width: 38.75;
+  max-width: 38.75rem;
 }
 
 .max-w-lg {
@@ -2867,6 +2889,10 @@ table {
   padding: 6rem;
 }
 
+.p-26 {
+  padding: 6.5rem;
+}
+
 .p-28 {
   padding: 7.5rem;
 }
@@ -2893,6 +2919,10 @@ table {
 
 .p-44 {
   padding: 12rem;
+}
+
+.p-48 {
+  padding: 13rem;
 }
 
 .p-px {
@@ -3039,6 +3069,16 @@ table {
   padding-right: 6rem;
 }
 
+.py-26 {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.px-26 {
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+}
+
 .py-28 {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -3107,6 +3147,16 @@ table {
 .px-44 {
   padding-left: 12rem;
   padding-right: 12rem;
+}
+
+.py-48 {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.px-48 {
+  padding-left: 13rem;
+  padding-right: 13rem;
 }
 
 .py-px {
@@ -3343,6 +3393,22 @@ table {
   padding-left: 6rem;
 }
 
+.pt-26 {
+  padding-top: 6.5rem;
+}
+
+.pr-26 {
+  padding-right: 6.5rem;
+}
+
+.pb-26 {
+  padding-bottom: 6.5rem;
+}
+
+.pl-26 {
+  padding-left: 6.5rem;
+}
+
 .pt-28 {
   padding-top: 7.5rem;
 }
@@ -3453,6 +3519,22 @@ table {
 
 .pl-44 {
   padding-left: 12rem;
+}
+
+.pt-48 {
+  padding-top: 13rem;
+}
+
+.pr-48 {
+  padding-right: 13rem;
+}
+
+.pb-48 {
+  padding-bottom: 13rem;
+}
+
+.pl-48 {
+  padding-left: 13rem;
 }
 
 .pt-px {
@@ -3692,6 +3774,10 @@ table {
   color: #6f7b6a;
 }
 
+.text-green-lightest {
+  color: #c0ccbc;
+}
+
 .text-pink {
   color: #f66d9b;
 }
@@ -3728,6 +3814,10 @@ table {
   color: #6f7b6a;
 }
 
+.hover\:text-green-lightest:hover {
+  color: #c0ccbc;
+}
+
 .hover\:text-pink:hover {
   color: #f66d9b;
 }
@@ -3762,6 +3852,10 @@ table {
 
 .focus\:text-green:focus {
   color: #6f7b6a;
+}
+
+.focus\:text-green-lightest:focus {
+  color: #c0ccbc;
 }
 
 .focus\:text-pink:focus {
@@ -4182,6 +4276,17 @@ table {
   z-index: auto;
 }
 
+.blur-up {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
 body {
   background-color: #ebe4d9;
   color: #5a6066;
@@ -4206,7 +4311,7 @@ body {
   font-size: 1rem;
   line-height: 1.55;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .paragraphs p:last-of-type {
@@ -4225,9 +4330,18 @@ body {
   font-size: .875rem;
 }
 
-.paragraphs.-lg p {
+.paragraphs.-md p {
   font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.paragraphs.-md p:last-of-type {
+  margin-bottom: 0;
+}
+
+.paragraphs.-lg p {
+  margin-bottom: 2rem;
+  font-size: 1.375rem;
 }
 
 .paragraphs.-lg p:last-of-type {
@@ -4356,11 +4470,11 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 90rem;
+  max-width: 64.5rem;
 }
 
-.container--sm {
-  max-width: 72.5rem;
+.container--lg {
+  max-width: 78rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4372,7 +4486,7 @@ body {
 }
 
 @media (min-width: 48rem) {
-  .flex-grid__offset {
+  .flex-grid.-offset-l {
     position: relative;
     left: -3rem;
   }
@@ -4384,17 +4498,13 @@ body {
 }
 
 .gutter {
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .gutter-lg {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.gutter-l--xl {
-  padding-left: 2.5rem;
 }
 
 @media (min-width: 48rem) {
@@ -4409,46 +4519,32 @@ body {
   }
 
   .gutter-l--xl {
-    padding-left: 12rem;
+    padding-left: 13rem;
   }
 }
 
 .space-t {
+  padding-top: 2rem;
+}
+
+.space-t--sm,
+.space-t--md,
+.space-t--lg {
   padding-top: 3.75rem;
 }
 
-.space-t--sm {
-  padding-top: 5rem;
-}
-
-.space-t--menu {
-  padding-top: 5rem;
-}
-
 .space-b {
-  padding-bottom: 3.75rem;
+  padding-bottom: 2rem;
 }
 
-.space-b--sm {
-  padding-bottom: 5rem;
-}
-
-.space-b--md {
-  padding-bottom: 6rem;
-}
-
+.space-b--sm,
+.space-b--md,
 .space-b--lg {
-  padding-bottom: 7.5rem;
+  padding-bottom: 3rem;
 }
 
 .space-b--xl {
-  padding-bottom: 8rem;
-}
-
-@media (min-width: 76.875rem) {
-  .space-t--menu {
-    padding-top: 10.25rem;
-  }
+  padding-bottom: 3.75rem;
 }
 
 @media (min-width: 48rem) {
@@ -4462,6 +4558,14 @@ body {
 
   .space-b--xl {
     padding-bottom: 12rem;
+  }
+
+  .space-t--md {
+    padding-top: 7.5rem;
+  }
+
+  .space-t--lg {
+    padding-top: 9rem;
   }
 }
 
@@ -4526,27 +4630,41 @@ button {
   color: #bf9177;
   display: inline-block;
   border-width: 2px;
-  border-color: #5a6066;
-  color: #5a6066;
+  border-color: #6f7b6a;
+  background-color: #6f7b6a;
+  color: #fff;
   font-size: .875rem;
   text-align: center;
   font-family: Work Sans, -apple-system, Fira Sans, Droid Sans, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  border-radius: .125rem;
 }
 
 .btn:hover {
   border-color: #5a6066;
   background-color: #5a6066;
-  color: #ebe4d9;
+  color: #fff;
 }
 
 .btn[disabled] {
   opacity: .5;
   pointer-events: none;
+}
+
+.btn.-light {
+  border-color: #fff;
+  background-color: #fff;
+  color: #6f7b6a;
+}
+
+.btn.-light:hover {
+  border-color: #6f7b6a;
+  background-color: #6f7b6a;
+  color: #fff;
 }
 
 .btn.-small {
@@ -4717,11 +4835,14 @@ button {
      object-fit: contain;
 }
 
-@media (max-width: 767px) {
-  .image .object-right--sm {
-    -o-object-position: right;
-       object-position: right;
-  }
+.image.-object-right img {
+  -o-object-position: right;
+     object-position: right;
+}
+
+.image.-object-left img {
+  -o-object-position: left;
+     object-position: left;
 }
 
 .image.-hover-scale img {
@@ -4802,18 +4923,6 @@ cite {
 }
 
 .icon.-sm {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: block;
-}
-
-.icon.-sm-2 {
-  width: 2rem;
-  height: 2rem;
-  display: block;
-}
-
-.icon.-sm-3 {
   width: 1.5rem;
   height: 1.5rem;
   display: block;
@@ -4843,105 +4952,45 @@ cite {
   }
 }
 
-.path-1 {
-  stroke-width: 2;
+.a {
+  fill: none;
+  stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
 }
 
-.stroke-yellow {
+.cls-1 {
   fill: none;
-  stroke: #f1d02f;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
 }
 
-.fill-stroke-yellow {
-  fill: #f1d030;
-  stroke: #f1d02f;
-}
-
-.stroke-green {
-  fill: none;
-  stroke: #4fb990;
-}
-
-.fill-stroke-green {
-  fill: #4fb990;
-  stroke: #4fb990;
-}
-
-.stroke-blue {
-  fill: none;
-  stroke: #3ec6fc;
-}
-
-.fill-stroke-blue {
-  fill: #3ec6fc;
-  stroke: #3ec6fc;
-}
-
-.stroke-red {
-  fill: none;
-  stroke: #ed414c;
-}
-
-.stroke-fill-red {
-  fill: #ed414c;
-  stroke: #ed414c;
-}
-
-.stroke-dark {
-  fill: none;
-  stroke: #324349;
-}
-
-.sroke-fill-dark {
-  fill: #32444a;
-  stroke: #324349;
-}
-
-.stroke-purple {
-  fill: none;
-  stroke: #803c4b;
-}
-
-.stroke-fill-purple {
-  fill: #803c4b;
-  stroke: #803c4b;
-}
-
-.ornament-breadcrumb {
+.ornament {
   position: relative;
 }
 
-.ornament-breadcrumb:after {
-  color: #bf9177;
-  display: inline-block;
-  margin-left: .25rem;
-  margin-right: .25rem;
-  content: "\25BA";
+.ornament.-brush {
+  margin-bottom: 2.5rem;
 }
 
-.ornament-breadcrumb:last-child:after {
-  display: none;
+.ornament.-brush:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  background: url("../img/raw/ornament_01.png") no-repeat;
+  height: 1.125rem;
+  width: 12.0625rem;
+  bottom: -1.5rem;
+  background-size: 90%;
 }
 
-.pattern {
-  background: url("/dist/assets/svg/pattern-crosshatch.svg") repeat;
-}
-
-.pattern--green {
-  background: url("/dist/assets/svg/pattern-crosshatch--green.svg") repeat;
-}
-
-.pattern--white {
-  background: url("/dist/assets/svg/pattern-crosshatch--white.svg") repeat;
-}
-
-.pattern.-md,
-[class^=pattern--].-md {
-  height: 3.25rem;
-  width: 12.5rem;
+.pattern--01 {
+  background: url("../img/raw/pattern_01.jpg") no-repeat;
+  background-size: 100%;
 }
 
 .pseudo {
@@ -4973,6 +5022,7 @@ cite {
 .label-meta {
   text-transform: uppercase;
   font-family: Work Sans, -apple-system, Fira Sans, Droid Sans, sans-serif;
+  font-weight: 600;
   font-size: .875rem;
 }
 
@@ -5179,54 +5229,86 @@ cite {
 
 .social-list li {
   display: inline-block;
-  margin-left: .25rem;
-  margin-right: .25rem;
 }
 
 .social-list a {
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #bf9177;
+  padding: .5rem;
+  display: inline-block;
+}
+
+.social-list a:hover {
+  color: #fff;
+  background-color: #bf9177;
+}
+
+.social-list .icon {
   width: 1rem;
   height: 1rem;
-  display: inline-block;
+  display: block;
+}
+
+@media (min-width: 48rem) {
+  .social-list a {
+    padding: 1rem;
+  }
+
+  .social-list .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+#instafetch {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+#instafetch article {
+  width: 33.33333%;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .signup-form {
   position: relative;
-  width: 100%;
-  max-width: 20rem;
+  max-width: 50rem;
 }
 
 .signup-form .email-input {
-  border-width: 2px;
-  border-color: #fff;
-  border-radius: .25rem;
-  background-color: transparent;
-  color: #bf9177;
+  border-radius: .125rem;
   transition-property: all;
   transition-duration: .15s;
   transition-timing-function: ease;
   font-size: 1rem;
   font-family: Work Sans, -apple-system, Fira Sans, Droid Sans, sans-serif;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  color: #bf9177;
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
 }
 
 .signup-form .email-input::-webkit-input-placeholder {
-  opacity: 1;
+  color: rgba(90, 96, 102, .5);
 }
 
 .signup-form .email-input:-ms-input-placeholder {
-  opacity: 1;
+  color: rgba(90, 96, 102, .5);
 }
 
 .signup-form .email-input::-ms-input-placeholder {
-  opacity: 1;
+  color: rgba(90, 96, 102, .5);
 }
 
 .signup-form .email-input::placeholder {
-  opacity: 1;
+  color: rgba(90, 96, 102, .5);
 }
 
 .signup-form .email-input:focus,
@@ -5267,8 +5349,25 @@ cite {
   color: #bf9177;
 }
 
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-header .section-title {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.section-header .section-detail {
+  max-width: 33rem;
+}
+
 .section-header .paragraphs {
-  max-width: 38.75;
+  max-width: 38.75rem;
+}
+
+.section-header__action {
+  padding-top: 2rem;
 }
 
 @media (min-width: 26.25rem) {
@@ -5327,6 +5426,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .xs\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .xs\:bg-pink {
     background-color: #f66d9b;
   }
@@ -5363,6 +5466,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .xs\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .xs\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -5397,6 +5504,10 @@ cite {
 
   .xs\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .xs\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .xs\:focus\:bg-pink:focus {
@@ -5499,6 +5610,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .xs\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .xs\:border-pink {
     border-color: #f66d9b;
   }
@@ -5535,6 +5650,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .xs\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .xs\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -5569,6 +5688,10 @@ cite {
 
   .xs\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .xs\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .xs\:focus\:border-pink:focus {
@@ -6934,11 +7057,11 @@ cite {
   }
 
   .xs\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .xs\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .xs\:max-w-lg {
@@ -7571,6 +7694,10 @@ cite {
     padding: 6rem;
   }
 
+  .xs\:p-26 {
+    padding: 6.5rem;
+  }
+
   .xs\:p-28 {
     padding: 7.5rem;
   }
@@ -7597,6 +7724,10 @@ cite {
 
   .xs\:p-44 {
     padding: 12rem;
+  }
+
+  .xs\:p-48 {
+    padding: 13rem;
   }
 
   .xs\:p-px {
@@ -7743,6 +7874,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .xs\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .xs\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .xs\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -7811,6 +7952,16 @@ cite {
   .xs\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .xs\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .xs\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .xs\:py-px {
@@ -8047,6 +8198,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .xs\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .xs\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .xs\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .xs\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .xs\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -8157,6 +8324,22 @@ cite {
 
   .xs\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .xs\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .xs\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .xs\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .xs\:pl-48 {
+    padding-left: 13rem;
   }
 
   .xs\:pt-px {
@@ -8388,6 +8571,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .xs\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .xs\:text-pink {
     color: #f66d9b;
   }
@@ -8424,6 +8611,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .xs\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .xs\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -8458,6 +8649,10 @@ cite {
 
   .xs\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .xs\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .xs\:focus\:text-pink:focus {
@@ -8935,6 +9130,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .sm\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .sm\:bg-pink {
     background-color: #f66d9b;
   }
@@ -8971,6 +9170,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .sm\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .sm\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -9005,6 +9208,10 @@ cite {
 
   .sm\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .sm\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .sm\:focus\:bg-pink:focus {
@@ -9107,6 +9314,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .sm\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .sm\:border-pink {
     border-color: #f66d9b;
   }
@@ -9143,6 +9354,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .sm\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .sm\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -9177,6 +9392,10 @@ cite {
 
   .sm\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .sm\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .sm\:focus\:border-pink:focus {
@@ -10542,11 +10761,11 @@ cite {
   }
 
   .sm\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .sm\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .sm\:max-w-lg {
@@ -11179,6 +11398,10 @@ cite {
     padding: 6rem;
   }
 
+  .sm\:p-26 {
+    padding: 6.5rem;
+  }
+
   .sm\:p-28 {
     padding: 7.5rem;
   }
@@ -11205,6 +11428,10 @@ cite {
 
   .sm\:p-44 {
     padding: 12rem;
+  }
+
+  .sm\:p-48 {
+    padding: 13rem;
   }
 
   .sm\:p-px {
@@ -11351,6 +11578,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .sm\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .sm\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .sm\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -11419,6 +11656,16 @@ cite {
   .sm\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .sm\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .sm\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .sm\:py-px {
@@ -11655,6 +11902,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .sm\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .sm\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .sm\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .sm\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .sm\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -11765,6 +12028,22 @@ cite {
 
   .sm\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .sm\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .sm\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .sm\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .sm\:pl-48 {
+    padding-left: 13rem;
   }
 
   .sm\:pt-px {
@@ -11996,6 +12275,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .sm\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .sm\:text-pink {
     color: #f66d9b;
   }
@@ -12032,6 +12315,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .sm\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .sm\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -12066,6 +12353,10 @@ cite {
 
   .sm\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .sm\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .sm\:focus\:text-pink:focus {
@@ -12543,6 +12834,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .md\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .md\:bg-pink {
     background-color: #f66d9b;
   }
@@ -12579,6 +12874,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .md\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .md\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -12613,6 +12912,10 @@ cite {
 
   .md\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .md\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .md\:focus\:bg-pink:focus {
@@ -12715,6 +13018,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .md\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .md\:border-pink {
     border-color: #f66d9b;
   }
@@ -12751,6 +13058,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .md\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .md\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -12785,6 +13096,10 @@ cite {
 
   .md\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .md\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .md\:focus\:border-pink:focus {
@@ -14150,11 +14465,11 @@ cite {
   }
 
   .md\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .md\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .md\:max-w-lg {
@@ -14787,6 +15102,10 @@ cite {
     padding: 6rem;
   }
 
+  .md\:p-26 {
+    padding: 6.5rem;
+  }
+
   .md\:p-28 {
     padding: 7.5rem;
   }
@@ -14813,6 +15132,10 @@ cite {
 
   .md\:p-44 {
     padding: 12rem;
+  }
+
+  .md\:p-48 {
+    padding: 13rem;
   }
 
   .md\:p-px {
@@ -14959,6 +15282,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .md\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .md\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .md\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -15027,6 +15360,16 @@ cite {
   .md\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .md\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .md\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .md\:py-px {
@@ -15263,6 +15606,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .md\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .md\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .md\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .md\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .md\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -15373,6 +15732,22 @@ cite {
 
   .md\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .md\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .md\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .md\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .md\:pl-48 {
+    padding-left: 13rem;
   }
 
   .md\:pt-px {
@@ -15604,6 +15979,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .md\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .md\:text-pink {
     color: #f66d9b;
   }
@@ -15640,6 +16019,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .md\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .md\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -15674,6 +16057,10 @@ cite {
 
   .md\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .md\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .md\:focus\:text-pink:focus {
@@ -16151,6 +16538,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .lg\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .lg\:bg-pink {
     background-color: #f66d9b;
   }
@@ -16187,6 +16578,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .lg\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .lg\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -16221,6 +16616,10 @@ cite {
 
   .lg\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .lg\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .lg\:focus\:bg-pink:focus {
@@ -16323,6 +16722,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .lg\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .lg\:border-pink {
     border-color: #f66d9b;
   }
@@ -16359,6 +16762,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .lg\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .lg\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -16393,6 +16800,10 @@ cite {
 
   .lg\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .lg\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .lg\:focus\:border-pink:focus {
@@ -17758,11 +18169,11 @@ cite {
   }
 
   .lg\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .lg\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .lg\:max-w-lg {
@@ -18395,6 +18806,10 @@ cite {
     padding: 6rem;
   }
 
+  .lg\:p-26 {
+    padding: 6.5rem;
+  }
+
   .lg\:p-28 {
     padding: 7.5rem;
   }
@@ -18421,6 +18836,10 @@ cite {
 
   .lg\:p-44 {
     padding: 12rem;
+  }
+
+  .lg\:p-48 {
+    padding: 13rem;
   }
 
   .lg\:p-px {
@@ -18567,6 +18986,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .lg\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .lg\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .lg\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -18635,6 +19064,16 @@ cite {
   .lg\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .lg\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .lg\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .lg\:py-px {
@@ -18871,6 +19310,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .lg\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .lg\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .lg\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .lg\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .lg\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -18981,6 +19436,22 @@ cite {
 
   .lg\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .lg\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .lg\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .lg\:pl-48 {
+    padding-left: 13rem;
   }
 
   .lg\:pt-px {
@@ -19212,6 +19683,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .lg\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .lg\:text-pink {
     color: #f66d9b;
   }
@@ -19248,6 +19723,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .lg\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .lg\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -19282,6 +19761,10 @@ cite {
 
   .lg\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .lg\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .lg\:focus\:text-pink:focus {
@@ -19759,6 +20242,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .mainMenu\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .mainMenu\:bg-pink {
     background-color: #f66d9b;
   }
@@ -19795,6 +20282,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .mainMenu\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .mainMenu\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -19829,6 +20320,10 @@ cite {
 
   .mainMenu\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .mainMenu\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .mainMenu\:focus\:bg-pink:focus {
@@ -19931,6 +20426,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .mainMenu\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .mainMenu\:border-pink {
     border-color: #f66d9b;
   }
@@ -19967,6 +20466,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .mainMenu\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .mainMenu\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -20001,6 +20504,10 @@ cite {
 
   .mainMenu\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .mainMenu\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .mainMenu\:focus\:border-pink:focus {
@@ -21366,11 +21873,11 @@ cite {
   }
 
   .mainMenu\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .mainMenu\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .mainMenu\:max-w-lg {
@@ -22003,6 +22510,10 @@ cite {
     padding: 6rem;
   }
 
+  .mainMenu\:p-26 {
+    padding: 6.5rem;
+  }
+
   .mainMenu\:p-28 {
     padding: 7.5rem;
   }
@@ -22029,6 +22540,10 @@ cite {
 
   .mainMenu\:p-44 {
     padding: 12rem;
+  }
+
+  .mainMenu\:p-48 {
+    padding: 13rem;
   }
 
   .mainMenu\:p-px {
@@ -22175,6 +22690,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .mainMenu\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .mainMenu\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .mainMenu\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -22243,6 +22768,16 @@ cite {
   .mainMenu\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .mainMenu\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .mainMenu\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .mainMenu\:py-px {
@@ -22479,6 +23014,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .mainMenu\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .mainMenu\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .mainMenu\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .mainMenu\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .mainMenu\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -22589,6 +23140,22 @@ cite {
 
   .mainMenu\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .mainMenu\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .mainMenu\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .mainMenu\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .mainMenu\:pl-48 {
+    padding-left: 13rem;
   }
 
   .mainMenu\:pt-px {
@@ -22820,6 +23387,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .mainMenu\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .mainMenu\:text-pink {
     color: #f66d9b;
   }
@@ -22856,6 +23427,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .mainMenu\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .mainMenu\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -22890,6 +23465,10 @@ cite {
 
   .mainMenu\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .mainMenu\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .mainMenu\:focus\:text-pink:focus {
@@ -23367,6 +23946,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .xl\:bg-green-lightest {
+    background-color: #c0ccbc;
+  }
+
   .xl\:bg-pink {
     background-color: #f66d9b;
   }
@@ -23403,6 +23986,10 @@ cite {
     background-color: #6f7b6a;
   }
 
+  .xl\:hover\:bg-green-lightest:hover {
+    background-color: #c0ccbc;
+  }
+
   .xl\:hover\:bg-pink:hover {
     background-color: #f66d9b;
   }
@@ -23437,6 +24024,10 @@ cite {
 
   .xl\:focus\:bg-green:focus {
     background-color: #6f7b6a;
+  }
+
+  .xl\:focus\:bg-green-lightest:focus {
+    background-color: #c0ccbc;
   }
 
   .xl\:focus\:bg-pink:focus {
@@ -23539,6 +24130,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .xl\:border-green-lightest {
+    border-color: #c0ccbc;
+  }
+
   .xl\:border-pink {
     border-color: #f66d9b;
   }
@@ -23575,6 +24170,10 @@ cite {
     border-color: #6f7b6a;
   }
 
+  .xl\:hover\:border-green-lightest:hover {
+    border-color: #c0ccbc;
+  }
+
   .xl\:hover\:border-pink:hover {
     border-color: #f66d9b;
   }
@@ -23609,6 +24208,10 @@ cite {
 
   .xl\:focus\:border-green:focus {
     border-color: #6f7b6a;
+  }
+
+  .xl\:focus\:border-green-lightest:focus {
+    border-color: #c0ccbc;
   }
 
   .xl\:focus\:border-pink:focus {
@@ -24974,11 +25577,11 @@ cite {
   }
 
   .xl\:max-w-sm {
-    max-width: 30rem;
+    max-width: 33rem;
   }
 
   .xl\:max-w-md {
-    max-width: 38.75;
+    max-width: 38.75rem;
   }
 
   .xl\:max-w-lg {
@@ -25611,6 +26214,10 @@ cite {
     padding: 6rem;
   }
 
+  .xl\:p-26 {
+    padding: 6.5rem;
+  }
+
   .xl\:p-28 {
     padding: 7.5rem;
   }
@@ -25637,6 +26244,10 @@ cite {
 
   .xl\:p-44 {
     padding: 12rem;
+  }
+
+  .xl\:p-48 {
+    padding: 13rem;
   }
 
   .xl\:p-px {
@@ -25783,6 +26394,16 @@ cite {
     padding-right: 6rem;
   }
 
+  .xl\:py-26 {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .xl\:px-26 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+
   .xl\:py-28 {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -25851,6 +26472,16 @@ cite {
   .xl\:px-44 {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .xl\:py-48 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .xl\:px-48 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .xl\:py-px {
@@ -26087,6 +26718,22 @@ cite {
     padding-left: 6rem;
   }
 
+  .xl\:pt-26 {
+    padding-top: 6.5rem;
+  }
+
+  .xl\:pr-26 {
+    padding-right: 6.5rem;
+  }
+
+  .xl\:pb-26 {
+    padding-bottom: 6.5rem;
+  }
+
+  .xl\:pl-26 {
+    padding-left: 6.5rem;
+  }
+
   .xl\:pt-28 {
     padding-top: 7.5rem;
   }
@@ -26197,6 +26844,22 @@ cite {
 
   .xl\:pl-44 {
     padding-left: 12rem;
+  }
+
+  .xl\:pt-48 {
+    padding-top: 13rem;
+  }
+
+  .xl\:pr-48 {
+    padding-right: 13rem;
+  }
+
+  .xl\:pb-48 {
+    padding-bottom: 13rem;
+  }
+
+  .xl\:pl-48 {
+    padding-left: 13rem;
   }
 
   .xl\:pt-px {
@@ -26428,6 +27091,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .xl\:text-green-lightest {
+    color: #c0ccbc;
+  }
+
   .xl\:text-pink {
     color: #f66d9b;
   }
@@ -26464,6 +27131,10 @@ cite {
     color: #6f7b6a;
   }
 
+  .xl\:hover\:text-green-lightest:hover {
+    color: #c0ccbc;
+  }
+
   .xl\:hover\:text-pink:hover {
     color: #f66d9b;
   }
@@ -26498,6 +27169,10 @@ cite {
 
   .xl\:focus\:text-green:focus {
     color: #6f7b6a;
+  }
+
+  .xl\:focus\:text-green-lightest:focus {
+    color: #c0ccbc;
   }
 
   .xl\:focus\:text-pink:focus {

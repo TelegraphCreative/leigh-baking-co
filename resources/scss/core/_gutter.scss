@@ -1,49 +1,33 @@
-
-  // Gutters
-  .gutter {
-    // Reg 12px -> 24px
-    @apply px-3; 
-
+// Gutters
+.gutter {
+  // Reg 12px -> 24px
+  @apply px-6;
 
   // Large 24 -> 40
   &-lg {
     @apply px-6;
   }
-
-  // Left
-  &-l {
-    // XL
-    &--xl {
-      @apply pl-10;
-    }
-  }
 }
-
-
 
 // Screens
 // MD
 @screen md {
-  
-    // Gutters
-    .gutter {
+  // Gutters
+  .gutter {
+    // Reg 12px -> 24px
+    @apply px-6; // 24px
 
-      // Reg 12px -> 24px
-      @apply px-6; // 24px
-      
-      // Large 24 -> 40
-      &-lg {
-        @apply px-10; // 40px
-      }
+    // Large 24 -> 40
+    &-lg {
+      @apply px-10; // 40px
+    }
 
-      // Left
-      &-l {
-        // XL 40 -> 192
-        &--xl {
-          @apply pl-44;
-        }
+    // Left
+    &-l {
+      // XL
+      &--xl {
+        @apply pl-48;
       }
     }
-  
   }
-  
+}

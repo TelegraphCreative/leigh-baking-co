@@ -1,33 +1,28 @@
 .social-list {
-    @apply .list-reset;
-    
-    li {
-        @apply inline-block mx-1;
+  @apply .list-reset;
+
+  li {
+    @apply inline-block;
+  }
+  a {
+    @apply rounded-full bg-white text-orange p-2 inline-block;
+
+    &:hover {
+      @apply text-white bg-orange;
     }
+  }
+
+  .icon {
+    @apply w-4 h-4 block;
+  }
+
+  // Screen MD
+  @screen md {
     a {
-        @apply w-4 h-4
-            inline-block;
-        
-        &:hover {
-            // @apply text-green;
-        }
+      @apply p-4;
     }
-
-    // -flush-l type
-    // &.-flush-l {
-    //     li:first-child {
-    //         @apply -ml-1;
-    //     }
-    // }
-
-    // -white type
-    // &.-white {
-    //     a {
-    //         @apply text-grey-lightest;
-            
-    //         &:hover {
-    //             @apply text-green;
-    //         }
-    //     }
-    // }
+    .icon {
+      @apply w-6 h-6;
+    }
+  }
 }

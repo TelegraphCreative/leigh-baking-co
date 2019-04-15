@@ -2,7 +2,7 @@
   @apply relative
         overflow-hidden bg-orange;
 
-  img{
+  img {
     @apply absolute
             pin-t pin-l
             w-full
@@ -48,7 +48,7 @@
     padding-top: 40.7%;
   }
 
-  // Fit and Position
+  // Fit
   &.-fit {
     &-cover img {
       object-fit: cover;
@@ -57,10 +57,13 @@
       object-fit: contain;
     }
   }
-
-  @media (max-width: 767px) {
-    .object-right--sm {
+  // Position
+  &.-object {
+    &-right img {
       object-position: right;
+    }
+    &-left img {
+      object-position: left;
     }
   }
 
@@ -94,10 +97,10 @@
 
   // Hover Transitions
   &.-hover-scale {
-      @apply property-all duration-3 timing-3;
-      transform: scale(1);
+    @apply property-all duration-3 timing-3;
+    transform: scale(1);
     &:hover {
-        transform: scale(1.02);
+      transform: scale(1.02);
     }
   }
 }

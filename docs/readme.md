@@ -1,4 +1,5 @@
 # Leigh Baking Co
+[View](https://telegraphcreative.github.io/leigh-baking-co/)
 
 ## Fonts
 

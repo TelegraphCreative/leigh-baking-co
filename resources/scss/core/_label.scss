@@ -1,10 +1,9 @@
 // Labels
 // Standard Label
 .label {
-    
-    // Meta
-    &-meta {
-        @apply uppercase font-sans
+  // Meta
+  &-meta {
+    @apply uppercase font-sans font-semibold
         text-sm;
-    }
+  }
 }

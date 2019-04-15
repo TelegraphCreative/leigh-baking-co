@@ -7,67 +7,44 @@
 .btn {
   @apply link
     inline-block
-    border-2 border-black
-    text-black text-sm text-center
+    border-2 
+    border-green
+    bg-green
+    text-white 
+    text-sm text-center
     font-sans 
-    font-medium
-    py-4 px-10;
+    font-semibold
+    py-4 px-10
+    rounded-sm;
 
   // Hover
   &:hover {
-    @apply border-black bg-black text-grey-lightest;
+    @apply border-black bg-black text-white;
   }
 
   &[disabled] {
     @apply opacity-50 pointer-events-none;
   }
 
-  // // Light
-  // &.-light {
-  //   @apply border-green-light text-green-light;
+  // Light
+  &.-light {
+    @apply border-white bg-white text-green;
 
-  //   &:hover {
-  //     @apply border-white bg-white text-green-darkest;
-  //   }
-  // }
-
-  // // Solid
-  // &.-solid {
-  //   @apply bg-green border-green text-white;
-
-  //   &:hover {
-  //     @apply bg-green-darkest border-green-darkest text-white;
-  //   }
-  // }
+    &:hover {
+      @apply border-green bg-green text-white;
+    }
+  }
 
   // Small
   &.-small {
     @apply py-3;
   }
 
-  
-
-  // // Dark
-  // &.-dark {
-  //   @apply border-green-darkest text-green-darkest;
-
-  //   &.-small {
-  //     @apply border;
-  //   }
-
-  //   &:hover {
-  //     @apply border-green-darkest bg-green-darkest text-white;
-  //   }
-  // }
-
-  // Screen 
+  // Screen
   @screen md {
-    
     // Base
     @apply py-4 px-6;
-
   }
-
 }
 
 // -Modifiers

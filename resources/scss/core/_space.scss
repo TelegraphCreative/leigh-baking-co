@@ -1,80 +1,63 @@
 // Section Spacing
 .space {
-
   // Top Spacing
   &-t {
     // Default
-    @apply pt-14;
-    
-    &--sm {
-      @apply pt-20;
-    }
-    
-    // Menu
-    &--menu {
-      @apply pt-20;
+    @apply pt-8;
+
+    &--sm,
+    &--md,
+    &--lg {
+      @apply pt-14;
     }
   }
-  
+
   // Bottom Spacing
   &-b {
-    
     // Default
-    @apply pb-14;
+    @apply pb-8;
 
-    &--sm {
-      @apply pb-20;
-    }
-    
-    &--md {
-      @apply pb-24;
-    }
-    
+    &--sm,
+    &--md,
     &--lg {
-      @apply pb-28;
+      @apply pb-12;
     }
 
     &--xl {
-      @apply pb-32;
-    }
-
-  }
-
-  @screen mainMenu {
-    // Top Spacing
-    &-t {
-      // Menu
-      &--menu {
-        @apply pt-38;
-      }
+      @apply pb-14;
     }
   }
 
-  @screen md {   
-    
+  @screen md {
     // Bottom Spacing
     &-b {
-      
       &--md {
         @apply pb-28;
       }
-      
+
       &--lg {
         @apply pb-36;
       }
-  
+
       &--xl {
         @apply pb-44;
       }
-
+    }
+    // Top Spacing
+    &-t {
+      &--md {
+        @apply pt-28;
+      }
+      &--lg {
+        @apply pt-36;
+      }
     }
   }
 }
 
-
 // Info: Spacing Scale (8 base)
 
 // 60px = 3.75rem -> 14 -> default
-// 120px = 7.5rem -> 28 -> md
+// 8px = 7.5rem -> 28 -> md
 // 144px = 9rem -> 36 -> lg
 // 192px = 12rem -> 44 -> xl

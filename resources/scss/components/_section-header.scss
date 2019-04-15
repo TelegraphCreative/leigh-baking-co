@@ -1,5 +1,16 @@
 .section-header {
-    .paragraphs {
-        @apply max-w-md;
-    }
+  @apply mb-10;
+  .section-title {
+    @apply mb-8 font-semibold;
+  }
+  .section-detail {
+    @apply max-w-sm;
+  }
+  .paragraphs {
+    @apply max-w-md;
+  }
+
+  &__action {
+    @apply pt-8;
+  }
 }

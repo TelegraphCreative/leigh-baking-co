@@ -4291,6 +4291,11 @@ faye-websocket@~0.11.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
+fetch-jsonp@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/fetch-jsonp/-/fetch-jsonp-1.1.3.tgz#9eb9e585ba08aaf700563538d17bbebbcd5a3db2"
+  integrity sha1-nrnlhboIqvcAVjU40Xu+u81aPbI=
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -5169,6 +5174,14 @@ inquirer@^0.12.0:
     string-width "^1.0.1"
     strip-ansi "^3.0.0"
     through "^2.3.6"
+
+instafetch.js@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/instafetch.js/-/instafetch.js-1.5.0.tgz#71c5ec50c880d1c87f167c7d45decaf969f888f7"
+  integrity sha1-ccXsUMiA0ch/Fnx9Rd7K+Wn4iPc=
+  dependencies:
+    fetch-jsonp "^1.1.3"
+    promise-polyfill "^7.0.0"
 
 internal-ip@^4.2.0:
   version "4.3.0"
@@ -8211,6 +8224,11 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
+
+promise-polyfill@^7.0.0:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
+  integrity sha512-FuEc12/eKqqoRYIGBrUptCBRhobL19PS2U31vMNTfyck1FxPyMfgsXyW4Mav85y/ZN1hop3hOwRlUDok23oYfQ==
 
 proxy-addr@~2.0.4:
   version "2.0.4"

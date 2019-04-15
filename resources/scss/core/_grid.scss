@@ -1,11 +1,10 @@
-
 // Container
 .container {
   @apply mx-auto;
-  max-width: 90rem; // 1440
+  max-width: 64.5rem; // 1032 + gutter (24)
 
-  &--sm {
-    max-width: 72.5rem; // 1080 + 80 for padding
+  &--lg {
+    max-width: 78rem; // 1248px + gutter-lg (40) for padding
     @apply mx-auto;
   }
 }
@@ -15,14 +14,12 @@
   @apply flex justify-between flex-wrap;
 }
 
-
 // Medium Screen
 @screen md {
-
   // Flex Grid
   .flex-grid {
     // offset-content
-    &__offset {
+    &.-offset-l {
       @apply relative;
       left: -3rem;
     }
@@ -32,11 +29,8 @@
   .md\:flex-grid {
     @apply flex justify-between;
   }
-
 }
 
 // Screens
 // MD
 // @screen md {}
-
-
