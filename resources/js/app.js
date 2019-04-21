@@ -6,10 +6,12 @@ window.Vue = require("vue");
 
 // Imports
 import site_menu from "./_components/SiteMenu";
+import tabs from "./_components/Tabs";
 // import scroll_to from "./_components/ScrollTo";
 // import contact_form from "./_components/ContactForm";
 import lazysizes from "lazysizes";
-require("instafetch.js");
+import mailchimp from "./_vendor/MailchimpAjax";
+
 
 // Vue App
 const app = new Vue({
@@ -22,13 +24,18 @@ const app = new Vue({
   },
 
   components: {
-    site_menu
+    site_menu,
+    tabs
   }
 });
 
+require("instafetch.js");
 instafetch.init({
-  accessToken: "2719074.1677ed0.aa4cd508693a4aa884e8478650fcc388",
+  accessToken: "11537687914.1677ed0.326d68f1d8184e47a92a99826383b318",
   target: "instafetch",
   numOfPics: 3,
   caption: false
 });
+
+
+mailchimp();

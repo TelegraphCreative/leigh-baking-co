@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Leigh Baking Co.</title>
+    <title>Leigh Baking Co</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
@@ -35,11 +35,40 @@
       hreflang="x-default"
     />
     <link href="./assets/css/app.css" rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicons/safari-pinned-tab.svg"
+      color="#6f7b6a"
+    />
+    <meta name="msapplication-TileColor" content="#6f7b6a" />
+    <meta name="theme-color" content="#6f7b6a" />
   </head>
 
   <body>
     <div class="site-container pattern--01" id="app">
-      <site_menu></site_menu>
+      <site_menu>
+        <template slot="logo">
+          <img src="./assets/img/raw/leighbakingco-logo.png" alt="" />
+        </template>
+      </site_menu>
 
       <div class="site-container__inner">
         <main class="site-main">
@@ -68,6 +97,7 @@
                       data-src="./assets/img/raw/fig_06.jpg"
                       class="lazyload blur-up"
                     />
+                    </a>
                   </figure>
                 </div>
                 <div class="md:w-2/5 | w-1/2 px-3 | md:pl-0 md:pr-6 md:mt-32">
@@ -78,7 +108,7 @@
                     />
                   </figure>
                 </div>
-                <div class="md:w-1/5">
+                <div class="md:w-1/5 hidden md:block ">
                   <figure
                     class="image -is12x16 -fit-cover -hover-scale -object-left"
                     style="height:80%"
@@ -109,44 +139,76 @@
               </div>
             </header>
 
-            <!-- Tabs -->
-            <div class="tabs">
-              <nav class="tabs__menu space-b--sm">
-                <ul class="menu-bar">
-                  <li>
-                    <button class="tabs__menu-item -active | label-meta">
-                      Scones & Muffins
-                    </button>
-                  </li>
-                  <li>
-                    <button class="tabs__menu-item | label-meta">
-                      Cookies
-                    </button>
-                  </li>
-                </ul>
-              </nav>
+            <tabs
+              :tabs="[ { name: 'Scones & Muffins', active: true },{ name: 'Cookies' } ]"
+            >
+              <template slot="tabsContent">
+                <!-- Tab Content -->
+                <div class="tab | menu-content">
+                  <div class="flex-grid">
+                    <div class="tab__content">
+                      <!-- Content -->
+                      <h3>Scones</h3>
+                      <ul>
+                        <li>Bacon Cheddar Rosemary</li>
+                        <li>Raspberry Walnut</li>
+                        <li>Chocolate Almond</li>
+                        <li>Fresh Lemon</li>
+                      </ul>
 
-              <!-- Tab Inner Content -->
-              <div class="tabs__tab">
-                <div class="tab-content">
-                  <h3 class="label-meta">Scones</h3>
-                  <ul class="list">
-                    <li>Bacon Cheddar Rosemary</li>
-                    <li>Raspberry Walnut</li>
-                    <li>Chocolate Almond</li>
-                    <li>Fresh Lemon</li>
-                  </ul>
+                      <h3>Muffins</h3>
+                      <ul>
+                        <li>Bacon Cheddar Rosemary</li>
+                        <li>Raspberry Walnut</li>
+                        <li>Chocolate Almond</li>
+                        <li>Fresh Lemon</li>
+                      </ul>
+                    </div>
+                    <div class="tab__media">
+                      <figure
+                        class="image -fit-cover -hover-scale"
+                        style="padding-top: calc(402 / 536 * 100%);"
+                      >
+                        <!-- Photo -->
+                        <img
+                          data-src="./assets/img/raw/fig_05.jpg"
+                          class="lazyload blur-up"
+                        />
+                      </figure>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tab-media">
-                  <figure class="image -is1x1 -fit-cover -hover-scale"></figure>
+                <!-- Tab Content -->
+                <div class="tab | menu-content">
+                  <div class="flex-grid">
+                    <div class="tab__content">
+                      <!-- Content -->
+                      <h3>Cakes</h3>
+                      <ul>
+                        <li>Bacon Cheddar Rosemary</li>
+                        <li>Raspberry Walnut</li>
+                        <li>Chocolate Almond</li>
+                        <li>Fresh Lemon</li>
+                      </ul>
+                    </div>
+                    <div class="tab__media">
+                      <figure class="image -is12x16 -fit-cover -hover-scale">
+                        <!-- Photo -->
+                        <img
+                          data-src="./assets/img/raw/fig_02.jpg"
+                          class="lazyload blur-up"
+                        />
+                      </figure>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </template>
+            </tabs>
           </section>
 
           <!-- Section -->
-          <section id="custom" class="container gutter | space-b space-t--lg">
+          <section id="custom" class="container gutter | space-b">
             <!-- Section Header -->
             <header class="section-header | max-w-sm">
               <h2 class="section-title | header-lg font-serif">Custom Cakes</h2>
@@ -366,7 +428,7 @@
             <!-- Signup Form -->
             <div class="signup-form">
               <form
-                action="http://XXX-URL-XXX.XXX.list-manage.com/subscribe/post?u=XXXXXXXXXXXXXXXXXXXXXXXX&amp;id=XXXXXXXXXX&amp;c=callback"
+                action="http://yahoo.us20.list-manage.com/subscribe/post?u=60650192196f1f2544df7a5ff&amp;id=2df338074b&amp;c=callback"
               >
                 <div id="js-form-inputs">
                   <input
@@ -378,11 +440,14 @@
                     placeholder="Email Digest Sign Up"
                   />
                 </div>
-                <button class="submit label-meta">
+                <!-- honeypot -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" id="js-validate-robot" name="b_a4752870f583bb49a02427b3c_143fa46c21" tabindex="-1" value=""></div>
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="submit label-meta">
                   Sign Up
                 </button>
               </form>
             </div>
+            <p id="js-subscribe-response" class="mt-4 pl-3 text-xs text-green"></p>
           </section>
 
           <!-- Section -->
@@ -454,5 +519,6 @@
     </div>
 
     <script src="./assets/js/app.js"></script>
+    <script src="//assets.pinterest.com/js/pinit.js" type="text/javascript" async defer data-pin-hover="true"></script>
   </body>
 </html>

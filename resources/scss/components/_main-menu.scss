@@ -1,0 +1,60 @@
+.site-header {
+  @apply pb-4;
+
+  .logo {
+    @apply mt-3;
+  }
+
+  &__container {
+    @apply flex items-center justify-between px-4;
+  }
+}
+
+.site-menu {
+  &.-lg {
+    @apply hidden;
+  }
+  .-hide-offscreen {
+    display: none !important;
+  }
+}
+
+@screen md {
+  .site-header {
+    @apply pb-0;
+
+    &__container {
+      @apply px-8;
+    }
+  }
+  .site-menu {
+    @apply pt-20 pb-10;
+
+    .-hide-offscreen {
+      display: inherit !important;
+    }
+    &.-lg {
+      @apply block;
+    }
+
+    li {
+      @apply pl-10;
+      &:first-child {
+        @apply pl-0;
+      }
+    }
+    .link {
+      &.-light {
+        @apply text-white text-xs uppercase border-b border-transparent property-all pb-1 timing-1 duration-2;
+
+        &:hover {
+          @apply text-white border-white;
+        }
+      }
+    }
+  }
+
+  .btn--toggle {
+    @apply hidden;
+  }
+}

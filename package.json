@@ -7,6 +7,7 @@
   "license": "unlicensed",
   "repository": "git@github.com:TelegraphCreative/leigh-baking-co.git",
   "dependencies": {
+    "animejs": "^3.0.1",
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "bunnyjs": "^0.14.41",

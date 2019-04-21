@@ -7,7 +7,7 @@
     <div class="site-header__container | container gutter-sm | timing-3 property-all duration-3">
       <!-- Logo -->
       <h1 class="logo menu-active__dim">
-        <a class="logo__link" href="/" :rel="this.$parent.siteName">
+        <a class="logo logo__link" href="/" :rel="this.$parent.siteName">
           <slot name="logo"></slot>
         </a>
       </h1>
@@ -23,7 +23,7 @@
       <!-- Menu -->
       <nav
         :aria-label="this.$parent.siteName"
-        class="site-menu -lg | menu-bar"
+        class="site-menu -lg | menu-bar -end"
         :class="{'-active' : isActive}"
       >
         <ul class="main-menu | timing-3 property-all duration-3">
@@ -33,27 +33,44 @@
               :class="item.classes"
               @click="goTo(item)"
               v-html="item.name"
-              class="menu-bar__a | link"
+              data-no-swup
+              class="menu-bar__a | link -light"
             ></a>
           </li>
         </ul>
+        <!-- <ul class="utility-menu | timing-3 property-all duration-3">
+          <li v-for="item in utilityMenu">
+            <a :href="item.link" :class="item.classes" @click="goTo(item)" v-html="item.name" data-no-swup class="menu-bar__a | link"></a>
+          </li>
+        </ul>-->
       </nav>
 
       <!-- Offscreen Menu -->
       <transition name="fade-right">
-        <nav v-if="isActive" class="site-menu -offscreen">
-          <ul class="main-menu">
-            <li v-for="item in menu">
-              <a
-                :href="item.link"
-                :class="item.classes"
-                @click="goTo(item)"
-                v-html="item.name"
-                class="menu-bar__a | link -dark | header-md"
-              ></a>
-            </li>
-          </ul>
-        </nav>
+        <div v-if="isActive" class="site-menu -offscreen">
+          <nav>
+            <ul class="main-menu">
+              <li v-for="item in menu">
+                <button
+                  :class="item.classes"
+                  @click="goTo(item)"
+                  v-html="item.name"
+                  class="menu-bar__a | link -dark | header-md"
+                ></button>
+              </li>
+            </ul>
+            <ul class="utility-menu | timing-3 property-all duration-3">
+              <li v-for="item in utilityMenu">
+                <button
+                  :class="item.classes"
+                  @click="goTo(item)"
+                  v-html="item.name"
+                  class="menu-bar__a | link"
+                ></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </transition>
     </div>
   </header>
@@ -61,8 +78,8 @@
 
 <script type="text/babel">
 import click_outside from "../_directives/ClickOutslide";
-// import brand from "../_icons/brandIcon";
-// import anime from "animejs";
+import anime from "animejs";
+// import Swup from "swup";
 
 export default {
   data() {
@@ -73,33 +90,52 @@ export default {
       doc: null,
       menu: [
         {
-          name: "menu",
-          anchor: true,
+          name: "Menu",
+          method: "anchor",
+          anchorId: "menu",
           link: "/#menu",
-          offset: 100,
+          offset: 0,
           classes: "js-section-anchor"
         },
 
         {
-          name: "custom",
-          anchor: true,
+          name: "Custom",
+          method: "anchor",
+          anchorId: "custom",
           link: "/#custom",
-          offset: 100,
+          offset: 0,
           classes: "js-section-anchor"
         },
         {
-          name: "about",
-          anchor: true,
+          name: "About",
+          method: "anchor",
+          anchorId: "about",
           link: "/#about",
-          offset: 100,
+          offset: 0,
           classes: "js-section-anchor"
         },
         {
-          name: "order",
-          anchor: true,
+          name: "Order",
+          method: "anchor",
+          anchorId: "order",
           link: "/#order",
-          offset: 100,
-          classes: "js-section-anchor"
+          offset: 0,
+          classes: "js-section-anchor -hide-offscreen"
+        }
+        // {
+        //   name: 'Example.com',
+        //   method: 'external',
+        //   link: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav',
+        // }
+      ],
+      utilityMenu: [
+        {
+          name: "Order",
+          method: "anchor",
+          anchorId: "order",
+          link: "/#order",
+          offset: 0,
+          classes: "btn js-section-anchor"
         }
       ]
     };
@@ -109,14 +145,16 @@ export default {
     const doc = document.querySelector("html");
     _this.doc = doc;
 
-    // Handle Escape
+    // Swup
+    // const swup = new Swup();
+
+    // Key Escape
     document.body.addEventListener("keyup", e => {
       if (e.keyCode === 27) {
         _this.hide();
       }
     });
 
-    // Menu Mode
     // Mode on Scroll
     window.addEventListener("scroll", function() {
       if (document.body.getBoundingClientRect().top < -100)
@@ -157,26 +195,40 @@ export default {
     },
 
     goTo(item) {
-      // Swup
-      if (item.internal)
-        // e.preventDefault();
-        console.log("internal link");
-      // swup.loadPage({
-      //   url: item.link, // route of request (defaults to current url)
-      //   method: "GET", // method of request (defaults to "GET")
-      //   data: data, // data passed into XMLHttpRequest send method
-      //   // customTransition: "", // name of your transition used for adding custom class to html element and choosing custom animation in swupjs (as setting data-swup-transition attribute on link)
-      // });
-      else if (item.external) window.open(item.external, "_blank");
-      else if (item.anchor) console.log("anchor link");
-      const element = document.querySelector("#" + item.anchor);
-      const elementOffset = element.offsetTop;
-      anime({
-        targets: "html, body",
-        scrollTop: elementOffset - item.offset,
-        duration: 500,
-        easing: "easeInOutQuad"
-      });
+      const _this = this;
+
+      if (item.method == "anchor") {
+        console.log(item.method);
+
+        // if Home
+        if (window.location.pathname == "/") {
+          _this.hide();
+          const element = document.querySelector("#" + item.anchorId);
+          const elementOffset = element.offsetTop;
+          anime({
+            targets: "html, body",
+            scrollTop: elementOffset - item.offset,
+            duration: 500,
+            easing: "easeInOutQuad"
+          });
+        }
+        // if Internal
+        else {
+          window.location = item.link;
+        }
+      } else if (item.method == "internal") {
+        console.log(item.method);
+        window.location = item.link;
+        // swup.loadPage({
+        //   url: item.link, // route of request (defaults to current url)
+        //   method: "GET", // method of request (defaults to "GET")
+        //   data: data, // data passed into XMLHttpRequest send method
+        //   // customTransition: "", // name of your transition used for adding custom class to html element and choosing custom animation in swupjs (as setting data-swup-transition attribute on link)
+        // });
+      } else if (item.method == "external") {
+        // console.log(item.method)
+        window.open(item.link, "_blank");
+      }
     }
   },
   directives: {

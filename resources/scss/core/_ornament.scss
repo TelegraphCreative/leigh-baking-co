@@ -7,9 +7,14 @@
       @apply absolute pseudo w-full pin-l;
       background: url("../img/raw/ornament_01.png") no-repeat;
       height: 1.125rem;
-      width: 12.0625rem;
+      width: 9rem;
       bottom: -1.5rem;
       background-size: 90%;
+
+      @screen md {
+        width: 12.0625rem;
+      }
     }
+    
   }
 }

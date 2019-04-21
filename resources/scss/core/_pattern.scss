@@ -1,7 +1,22 @@
 .pattern {
-  // -Green
+  // -Hero
   &--01 {
     background: url("../img/raw/pattern_01.jpg") no-repeat;
     background-size: 100%;
+  }
+}
+
+@screen md {
+  .pattern {
+    &-bg--02 {
+      &:after {
+        @apply absolute pseudo pin-t pin-r -mr-24 -mb-24;
+        background: url("../img/raw/pattern_02.png") center no-repeat;
+        background-size: 90%;
+        width: 519px;
+        height: 457px;
+        z-index: -1;
+      }
+    }
   }
 }

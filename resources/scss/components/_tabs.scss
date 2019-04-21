@@ -1,0 +1,68 @@
+// General
+.tabs {
+  ul {
+    @apply list-reset;
+  }
+
+  .link {
+    @apply uppercase tracking-normal text-sm;
+  }
+}
+
+// Menu Spacing
+.tabs-menu {
+  @apply -mx-4;
+}
+
+.tabs-menu {
+  @apply mb-14;
+
+  li {
+    @apply max-w-xxxs w-full text-center relative;
+  }
+
+  .link.-active {
+    @apply text-orange;
+    &:after {
+      @apply absolute pseudo w-full w-full;
+
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      background: url("../img/raw/ornament_01.png") no-repeat;
+      background-position: center;
+      height: 1.125rem;
+      bottom: -1.5rem;
+      max-width: 12em;
+      background-size: 100%;
+    }
+  }
+}
+
+// Content Positioning
+
+.tabs-content {
+  @apply relative;
+}
+
+.tab {
+  @apply pin-t absolute opacity-0;
+
+  &.-active {
+    @apply opacity-100 relative;
+  }
+}
+
+@screen md {
+  .tabs-menu {
+    @apply mx-0;
+  }
+
+  // Content Layout
+  .tab__content {
+    @apply w-3/5;
+  }
+  .tab__media {
+    @apply w-2/5;
+  }
+}

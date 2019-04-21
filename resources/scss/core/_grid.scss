@@ -12,6 +12,13 @@
 // Flex Grid
 .flex-grid {
   @apply flex justify-between flex-wrap;
+
+  &.-start {
+    @apply justify-start;
+  }
+  &.-end {
+    @apply justify-end;
+  }
 }
 
 // Medium Screen

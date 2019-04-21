@@ -1,0 +1,18 @@
+.site-menu.-offscreen {
+    @apply z-30 fixed pin-t pin-r w-4/5 h-full
+    flex items-center justify-center
+    bg-white text-black;
+
+    ul {
+        @apply list-reset;
+    }
+
+    .main-menu {
+        @apply mb-6
+    }
+
+    .menu-bar__a {
+        @apply mb-6;
+    }
+
+}

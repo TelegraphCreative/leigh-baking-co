@@ -1,0 +1,17 @@
+.menu-content {
+    h3 {
+        @apply font-semibold uppercase text-sm tracking-normal text-black mb-4 pt-12;
+
+        &:first-of-type {
+            @apply pt-0;
+        }
+    }
+
+    ul {
+        @apply list-reset text-orange;
+
+        li {
+            @apply mb-4;
+        }
+    }
+}

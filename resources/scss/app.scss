@@ -2,6 +2,9 @@
   display: none;
 }
 
+body {
+  overflow-x: hidden;
+}
 :root {
   // Variables
   --black: #0b292f;
@@ -43,6 +46,8 @@
 // @import "./vendor/choices";
 
 // Menus
+@import "./components/main-menu";
+@import "./components/main-menu--offscreen";
 @import "./components/menu-bar";
 
 // Sliders
@@ -59,6 +64,9 @@
 
 // Misc
 @import "./components/section-header";
+@import "./components/tabs";
+@import "./components/menu-content";
+@import "./components/pinterest";
 // @import "./components/hcard";
 
 @import "./components/site-footer";

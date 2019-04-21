@@ -13,6 +13,11 @@
           justify-between
           items-center;
       }
+
+      // Mods
+      &.-end ul {
+        @apply justify-end;
+      }
     }
 
 }

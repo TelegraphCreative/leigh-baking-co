@@ -26,11 +26,14 @@
 .logo-icon {
   @apply w-full flex items-center;
 }
-
+// Logo
+.logo {
+  max-width: 5rem;
+}
 @screen md {
   // Logo
   .logo {
-    @apply max-w-xxs;
+    max-width: 11.125rem;
   }
 }
 
