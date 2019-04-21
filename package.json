@@ -14,6 +14,7 @@
     "in-view": "^0.6.1",
     "instafetch.js": "^1.5.0",
     "laravel-mix": "^4.0.15",
+    "laravel-mix-purgecss": "^4.1.0",
     "laravel-mix-tailwind": "^0.1.0",
     "lazysizes": "^4.1.7",
     "rellax": "^1.9.1",

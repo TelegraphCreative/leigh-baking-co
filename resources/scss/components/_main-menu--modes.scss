@@ -1,0 +1,41 @@
+// Short Mode
+.site-header.-short {
+  @apply bg-orange;
+  // background: rgba(235, 228, 217, 0.8);
+  // .site-header__container {
+  // }
+
+  .btn--toggle {
+    span {
+      @apply bg-black;
+    }
+  }
+  .logo {
+    @apply opacity-0;
+    width: 7rem;
+  }
+  .site-menu {
+    @apply py-0;
+  }
+
+  .btn--toggle::after {
+    @apply duration-3 timing-1 property-colors delay-4;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(235, 228, 217, 0.8);
+    z-index: -1;
+    padding: 20px;
+    margin-left: -8px;
+    margin-top: -12px;
+  }
+}
+
+// Active Mode
+.site-header.-active {
+  .btn--toggle::after {
+    background: transparent;
+    @apply delay-0;
+  }
+}

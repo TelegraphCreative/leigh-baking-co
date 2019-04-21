@@ -1,5 +1,6 @@
 let mix = require("laravel-mix");
 require("laravel-mix-tailwind");
+require("laravel-mix-purgecss");
 
 mix
   .setPublicPath("./docs")
@@ -16,5 +17,11 @@ mix
   // 		'./assets/css/**/*.css',
   // 		'./assets/js/**/*.js',    ]
   // 	})
+  .purgeCss({
+    enabled: mix.inProduction(),
+    whitelist: ["-short"],
+    folders: ["resources", "docs"],
+    extensions: ["twig", "html", "js", "php", "vue"]
+  })
   .tailwind()
   .version();

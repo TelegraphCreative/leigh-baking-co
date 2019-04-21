@@ -7,6 +7,7 @@ body {
 }
 :root {
   // Variables
+  --bg-transparent: rgba(235, 228, 217, 0.5);
   --black: #0b292f;
 }
 
@@ -16,6 +17,7 @@ body {
 
 // Core
 @import "./core/fonts";
+@import "./core/overflow";
 @import "./core/lazy";
 @import "./core/typography";
 @import "./core/transition";
@@ -47,6 +49,7 @@ body {
 
 // Menus
 @import "./components/main-menu";
+@import "./components/main-menu--modes";
 @import "./components/main-menu--offscreen";
 @import "./components/menu-bar";
 

@@ -3,6 +3,7 @@
   @apply no-underline
         font-semibold
         inline-block
+        tracking-wide
         timing-1 duration-1 property-all;
 
   // Default
@@ -27,7 +28,6 @@
       @apply text-orange;
     }
   }
-
 }
 
 // Default Link

@@ -2,7 +2,7 @@
   @apply pb-4;
 
   .logo {
-    @apply mt-3;
+    @apply mt-3 timing-1 duration-3 property-opacity;
   }
 
   &__container {
@@ -11,6 +11,8 @@
 }
 
 .site-menu {
+  @apply timing-1 duration-3 property-all;
+
   &.-lg {
     @apply hidden;
   }
@@ -21,11 +23,7 @@
 
 @screen md {
   .site-header {
-    @apply pb-0;
-
-    &__container {
-      @apply px-8;
-    }
+    @apply fixed w-full pin-t pin-l z-50 px-8 timing-1 duration-3 property-colors pb-0;
   }
   .site-menu {
     @apply pt-20 pb-10;

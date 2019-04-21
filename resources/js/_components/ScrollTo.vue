@@ -15,16 +15,15 @@ export default {
     },
     classes: {
       required: true,
-      default: ''
+      default: ""
     },
     text: {
       required: true,
-      default: 'Click here'
+      default: "Click here"
     }
   },
   methods: {
     scrollTo() {
-      console.log(this.to)
       const element = document.querySelector("#" + this.to);
       const elementOffset = element.offsetTop;
       anime({

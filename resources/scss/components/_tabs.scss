@@ -1,7 +1,7 @@
 // General
 .tabs {
   ul {
-    @apply list-reset;
+    @apply list-reset pb-5;
   }
 
   .link {
@@ -9,16 +9,11 @@
   }
 }
 
-// Menu Spacing
 .tabs-menu {
-  @apply -mx-4;
-}
-
-.tabs-menu {
-  @apply mb-14;
+  @apply mb-10;
 
   li {
-    @apply max-w-xxxs w-full text-center relative;
+    @apply max-w-xxxs w-full text-center relative mr-6;
   }
 
   .link.-active {
@@ -55,7 +50,11 @@
 
 @screen md {
   .tabs-menu {
-    @apply mx-0;
+    @apply mb-20 mx-0;
+
+    li {
+      @apply mr-0;
+    }
   }
 
   // Content Layout

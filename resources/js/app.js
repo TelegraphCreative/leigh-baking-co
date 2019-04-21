@@ -7,11 +7,10 @@ window.Vue = require("vue");
 // Imports
 import site_menu from "./_components/SiteMenu";
 import tabs from "./_components/Tabs";
-// import scroll_to from "./_components/ScrollTo";
+import scroll_to from "./_components/ScrollTo";
 // import contact_form from "./_components/ContactForm";
 import lazysizes from "lazysizes";
 import mailchimp from "./_vendor/MailchimpAjax";
-
 
 // Vue App
 const app = new Vue({
@@ -25,6 +24,7 @@ const app = new Vue({
 
   components: {
     site_menu,
+    scroll_to,
     tabs
   }
 });
@@ -36,6 +36,5 @@ instafetch.init({
   numOfPics: 3,
   caption: false
 });
-
 
 mailchimp();

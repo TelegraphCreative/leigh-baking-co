@@ -76,7 +76,7 @@
           <section id="intro" class="">
             <div class="container | space-t--lg space-b--lg">
               <!-- Section Header -->
-              <header class="section-header | gutter | text-white">
+              <header class="section-header | gutter | text-white | md:pt-10">
                 <h1
                   class="section-title | header-lg font-serif | md:max-w-sm md:pr-10"
                 >
@@ -126,7 +126,7 @@
           <!-- Section -->
           <section
             id="menu"
-            class="container | gutter | space-t--lg space-b--lg"
+            class="container | gutter | space-t--lg"
           >
             <!-- Section Header -->
             <header class="section-header">
@@ -140,7 +140,7 @@
             </header>
 
             <tabs
-              :tabs="[ { name: 'Scones & Muffins', active: true },{ name: 'Cookies' } ]"
+              :tabs="[ { name: 'Scones & Muffins', active: true },{ name: 'Cookies' },{ name: 'Pies & Handpies' } ]"
             >
               <template slot="tabsContent">
                 <!-- Tab Content -->
@@ -158,10 +158,10 @@
 
                       <h3>Muffins</h3>
                       <ul>
-                        <li>Bacon Cheddar Rosemary</li>
-                        <li>Raspberry Walnut</li>
-                        <li>Chocolate Almond</li>
-                        <li>Fresh Lemon</li>
+                        <li>Banana Pecan</li>
+                        <li>Orange Poppyseed</li>
+                        <li>Carrot Blueberry</li>
+                        <li>Double Chocolate</li>
                       </ul>
                     </div>
                     <div class="tab__media">
@@ -186,10 +186,42 @@
                       <!-- Content -->
                       <h3>Cakes</h3>
                       <ul>
-                        <li>Bacon Cheddar Rosemary</li>
-                        <li>Raspberry Walnut</li>
-                        <li>Chocolate Almond</li>
-                        <li>Fresh Lemon</li>
+                        <li>Chocolate Chunk</li>
+                        <li>Brown Butter Snickerdoodle</li>
+                        <li>Peanut Butter & Jelly Cookies</li>
+                        <li>Orange Cardamom Shortbread</li>
+                        <li>Vanilla Bean Madeleines</li>
+                      </ul>
+                    </div>
+                    <div class="tab__media">
+                      <figure class="image -is12x16 -fit-cover -hover-scale">
+                        <!-- Photo -->
+                        <img
+                          data-src="./assets/img/raw/fig_02.jpg"
+                          class="lazyload blur-up"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab | menu-content">
+                  <div class="flex-grid">
+                    <div class="tab__content">
+                      <!-- Content -->
+                      <h3>Whole Pies:</h3>
+                      <ul>
+                        <li>Fresh Blueberry</li>
+                        <li>Raspberry Coconut Cream</li>
+                        <li>Chocolate Key Lime</li>
+                        <li>Blood Orange Rosemary</li>
+                      </ul>
+                      
+                      <h3>Mini Hand Pies:</h3>
+                      <ul>
+                        <li>Fresh Blueberry</li>
+                        <li>Classic Apple</li>
                       </ul>
                     </div>
                     <div class="tab__media">
@@ -208,7 +240,7 @@
           </section>
 
           <!-- Section -->
-          <section id="custom" class="container gutter | space-b">
+          <section id="custom" class="container gutter | space-b space-t--lg">
             <!-- Section Header -->
             <header class="section-header | max-w-sm">
               <h2 class="section-title | header-lg font-serif">Custom Cakes</h2>
@@ -220,7 +252,7 @@
                 </p>
               </div>
               <div class="section-header__action">
-                <a href="#" class="btn">Order Now</a>
+                <scroll_to :to="'order'" :offset="0" :text="'Order Now'" :classes="'btn'">
               </div>
             </header>
           </section>
@@ -268,27 +300,21 @@
                   <div
                     class="section-detail | paragraphs -lg | text-green-lightest"
                   >
-                    <p>
-                      My name is Abigail Bradford and I’ve been working as a
-                      professional baker in Fort Worth for about five years now.
-                    </p>
+                    <p>My name is Abigail Leigh Bradford and I’ve been working as a professional baker in Fort Worth for about five years
+                      now.</p>
                   </div>
                 </header>
 
                 <!-- Section Article -->
                 <article class="paragraphs | text-white | max-w-sm">
-                  <p>
-                    When I had my daughter last year, I decided it was time to
-                    pursue my dream of starting a small business.
-                  </p>
-                  <p>
-                    My main focus with Leigh Baking Co. is to create scratch
-                    baked goods that are familiar and remind you of sweet
-                    memories, but have a pastry chef’s touch. I have an eye for
-                    detail and a palate for everything from the simple to the
-                    exotic flavors.
-                  </p>
-                  <p>I welcome any and all inquires in the DFW metroplex!</p>
+                  <p>After giving birth last year to my daughter, Charlotte Leigh, I decided to pursue my lifetime aspiration of owning my
+                  own business while staying home to raise her.</p>
+
+                  <p>Leigh Baking Co. creates scratch baked goods that are familiar and cherished by you and your loved ones, but have a
+                  pastry chef’s touch. I have an eye for detail, strong creative vision, and an affinity for unique flavor combinations.</p>
+
+                  <p>I look forward to getting to know y’all and sharing my craft with my community. I welcome any and all inquires in the
+                  DFW metroplex!</p>
                 </article>
               </div>
 
@@ -306,7 +332,7 @@
 
           <!-- Section -->
           <section
-            id="contact"
+            id="order"
             class="container gutter | space-t--lg space-b--lg"
           >
             <div class="flex-grid">
@@ -318,9 +344,7 @@
                   </h1>
                   <div class="section-detail paragraphs">
                     <p>
-                      To place an order, inquire about custom cakes, or just
-                      share your ideas with me please call or email to get
-                      started.
+                      To place an order, inquire about custom cakes, or just share your ideas with me please call or email to get started.
                     </p>
                   </div>
                 </header>
@@ -391,7 +415,7 @@
                 </ul>
               </div>
 
-              <aside class="md:w-1/4 md:pl-6 w-full">
+              <aside class="md:w-1/4 md:pl-6 w-full md:mt-0 mt-10">
                 <h4 class="label-meta text-orange | ornament -brush">
                   Nice-to-Knows
                 </h4>
@@ -419,8 +443,7 @@
               </h2>
               <div class="section-detail | paragraphs">
                 <p>
-                  Never miss a new menu rollout, special offers, or giveaways!
-                  We’ll deliver the latest to your inbox.
+                  Never miss a new menu rollout, special offers, or giveaways! We’ll deliver the latest to your inbox.
                 </p>
               </div>
             </header>
@@ -459,7 +482,7 @@
               <ul class="social-list | list-reset">
                 <!-- Instagram -->
                 <li class="mr-1 md:mr-3">
-                  <a href="#">
+                  <a href="https://www.instagram.com/leighbakingco/" target="_blank">
                     <span class="icon">
                       <svg
                         id="Regular"
@@ -485,7 +508,7 @@
                 <!-- Facebook -->
                 <li class="">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/leighbakingco/" target="_blank"
                     class="rounded-full bg-white text-orange p-2 md:p-4 hover:text-white hover:bg-orange"
                   >
                     <span class="icon">
