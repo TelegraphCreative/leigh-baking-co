@@ -8,8 +8,11 @@
     }
 
     ul {
-        @apply list-reset text-orange;
-
+        @apply list-reset text-orange max-w-sm;
+        b {
+            @apply mb-2;
+        }
+        small {}
         li {
             @apply mb-4;
         }
